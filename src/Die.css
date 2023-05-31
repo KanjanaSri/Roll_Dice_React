@@ -1,0 +1,19 @@
+.Die {
+  font-size: 10em;
+  padding: 0.35em;
+  color: #159895;
+}
+
+.shaking {
+  animation: wobble 0.5s;
+}
+
+@keyframes wobble{
+  0% {transform: none}
+  15% {transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg)}
+  30% {transform: translate3d(-12%, 0, 0) rotate3d(0, 0, 1, 15deg)}
+  45% {transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -5deg)}
+  60% {transform: translate3d(-7%, 0, 0) rotate3d(0, 0, 1, 15deg)}
+  75% {transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -10deg)}
+  100% {transform: none} 
+}
